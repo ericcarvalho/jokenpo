@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoKenPo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <div class="container">
+    <header>
+      <h1>JoKenPo</h1>
+      <p>Pedra • Papel • Tesoura</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="score player">
+        <h2>Você</h2>
+        <span id="player-score">0</span>
+      </div>
+      <div class="score computer">
+        <h2>Computador</h2>
+        <span id="computer-score">0</span>
+      </div>
+    </section>
+
+    <section class="choices">
+      <h3>Escolha sua jogada:</h3>
+      <div class="buttons">
+        <button class="choice" data-choice="pedra">✊</button>
+        <button class="choice" data-choice="papel">✋</button>
+        <button class="choice" data-choice="tesoura">✌️</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="vs">VS</div>
+      <p>Sua escolha: <span id="player-choice">-</span></p>
+      <p>Computador: <span id="computer-choice">-</span></p>
+      <h2 id="winner">Quem será o vencedor?</h2>
+    </section>
+
+    <button id="reset">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
