@@ -28,6 +28,7 @@ header p {
 .scoreboard {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 30px 0;
 }
 
@@ -49,6 +50,34 @@ header p {
   font-size: 2.5rem;
   display: block;
   margin-top: 10px;
+}
+
+.result-center {
+  flex: 1;
+  text-align: center;
+}
+
+#winner {
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .buttons {
@@ -78,20 +107,6 @@ header p {
 
 .result {
   margin: 30px 0;
-}
-
-.vs {
-  font-size: 2.5rem;
-  color: #ff0066;
-  text-shadow: 0 0 20px #ff0066;
-  margin-bottom: 20px;
-}
-
-#winner {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  color: #00ffff;
-  text-shadow: 0 0 15px #00ffff;
 }
 
 #reset {
