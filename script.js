@@ -1,3 +1,4 @@
+/*
 const choices = document.querySelectorAll('.choice');
 const playerChoiceSpan = document.getElementById('player-choice');
 const computerChoiceSpan = document.getElementById('computer-choice');
@@ -46,3 +47,5 @@ resetBtn.addEventListener('click', () => {
   computerChoiceSpan.textContent = "-";
   winnerText.textContent = "Quem será o vencedor?";
 });
+*/
+
