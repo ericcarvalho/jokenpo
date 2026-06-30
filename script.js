@@ -1,11 +1,9 @@
-/*
-const choices = document.querySelectorAll('.choice');
-const playerChoiceSpan = document.getElementById('player-choice');
-const computerChoiceSpan = document.getElementById('computer-choice');
-const winnerText = document.getElementById('winner');
-const playerScoreEl = document.getElementById('player-score');
-const computerScoreEl = document.getElementById('computer-score');
-const resetBtn = document.getElementById('reset');
+const choices = document.querySelectorAll(".choice");
+const playerChoiceSpan = document.getElementById("player-choice");
+const computerChoiceSpan = document.getElementById("computer-choice");
+const winnerText = document.getElementById("winner");
+const playerScoreSpan = document.getElementById("player-score");
+const computerScoreSpan = document.getElementById("computer-score");
 
 let playerScore = 0;
 let computerScore = 0;
@@ -13,7 +11,7 @@ let computerScore = 0;
 const options = ["pedra", "papel", "tesoura"];
 
 choices.forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     const playerChoice = button.dataset.choice;
     const computerChoice = options[Math.floor(Math.random() * options.length)];
 
@@ -22,30 +20,32 @@ choices.forEach(button => {
 
     if (playerChoice === computerChoice) {
       winnerText.textContent = "Empate!";
-    } else if (
+    }else if (
       (playerChoice === "pedra" && computerChoice === "tesoura") ||
       (playerChoice === "papel" && computerChoice === "pedra") ||
       (playerChoice === "tesoura" && computerChoice === "papel")
     ) {
-      winnerText.textContent = "Você venceu!";
+      winnerText.textContent = "Você ganhou!";
       playerScore++;
-      playerScoreEl.textContent = playerScore;
+      playerScoreSpan.textContent = playerScore;
     } else {
-      winnerText.textContent = "Computador venceu!";
+      winnerText.textContent = "Alexa ganhou!";
       computerScore++;
-      computerScoreEl.textContent = computerScore;
+      computerScoreSpan.textContent = computerScore;
     }
+
   });
 });
 
-resetBtn.addEventListener('click', () => {
+const resetButton = document.getElementById("reset");
+
+resetButton.addEventListener("click", () => {
   playerScore = 0;
   computerScore = 0;
-  playerScoreEl.textContent = 0;
-  computerScoreEl.textContent = 0;
+  playerScoreSpan.textContent = playerScore;
+  computerScoreSpan.textContent = computerScore;
   playerChoiceSpan.textContent = "-";
   computerChoiceSpan.textContent = "-";
   winnerText.textContent = "Quem será o vencedor?";
 });
-*/
 
