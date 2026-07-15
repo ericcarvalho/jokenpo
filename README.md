@@ -1,3 +1,5 @@
+<img src="./img/JonKenPo.png">
+
 # JoKenPo
 
 Este projeto é uma versão simples do clássico jogo de Pedra, Papel e Tesoura, criada com HTML, CSS e JavaScript.
